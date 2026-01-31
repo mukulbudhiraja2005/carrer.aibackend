@@ -13,12 +13,10 @@ const app = express();
 connectDB();
 
 app.use(cors({
-  origin: [
-    "http://localhost:3000",
-    "https://carrer-aifrontend-djuk.vercel.app"
-  ],
+  origin: true,
   credentials: true,
 }));
+
 app.use(express.json());
 
 
