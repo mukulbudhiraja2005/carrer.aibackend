@@ -15,11 +15,12 @@ connectDB();
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://career-ai.vercel.app"
+    "https://carrer-aifrontend-djuk.vercel.app"
   ],
   credentials: true,
 }));
 app.use(express.json());
+
 
 app.use("/api/auth", authRoutes);
 app.use("/api/ai", aiRoutes);
